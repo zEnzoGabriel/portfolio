@@ -1,0 +1,39 @@
+/* ESTILO GERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+ul.sem-marcador {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+body {
+    background-color: black;
+    height: 100vh;
+    /*altura que toma todo o espaço da tela*/
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/* ESTILO DO CABEÇALHO */
+
+.header {
+    padding: 40px 4%;
+
+}
+
+/* BUSCANDO UMA CLASSE DENTRO DA TAG HEADER, FAZENDO DESTA FORMA VOCÊ FAZ COM QUE O 
+ESTILO PEGUE DIRETAMENTE A TAG ESPECIFICADA E NÃO TODOS OS ELEMENTOS NA TAG */
+
+header>.interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
