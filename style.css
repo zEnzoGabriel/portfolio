@@ -25,6 +25,42 @@ body {
     margin: 0 auto;
 }
 
+.flex {
+    display: flex;
+}
+
+/* Na linha 35, havia uma tag "header" antes do ".button-contato" estava setado pq o button a que ele pertencia
+estava estilizado, mas como os outros botões tbm vão ter o mesmo estilo, a tag header
+foi retirada, para que virasse uma classe global, aderindo o estilo aos outros botões da página */
+.button-contato button {
+    background: linear-gradient(to right, rgb(29, 136, 207), rgb(52, 209, 209));
+
+    color: black;
+    padding: 14px 28px;
+    font-size: 18px;
+    font-weight: 600;
+    /* text-transform: uppercase; */
+    letter-spacing: 0.5px;
+    border: none;
+    border-radius: 20px;
+    /* Bordas arredondadas para um toque futurista */
+    cursor: pointer;
+    /* transition: 0.4s; */
+    transition: .2s;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(147, 51, 234, 0.8);
+    /* Efeito neon */
+}
+
+.button-contato button:hover {
+
+    background: linear-gradient(to right, rgb(109, 8, 218), rgb(175, 40, 242));
+    opacity: 1;
+    /* transition: 0.2s; */
+    transform: scale(1.05);
+}
+
 /* ESTILO DO CABEÇALHO */
 
 .header {
@@ -62,36 +98,60 @@ header nav ul li {
     padding: 0 40px;
 }
 
-header .button-contato button {
-    background: linear-gradient(to right, rgb(29, 136, 207), rgb(52, 209, 209));
 
-    color: white;
-    padding: 14px 28px;
-    font-size: 16px;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    border: none;
-    border-radius: 20px;
-    /* Bordas arredondadas para um toque futurista */
-    cursor: pointer;
-    transition: 0.4s;
-    position: relative;
-    overflow: hidden;
-    box-shadow: 0px 0px 10px rgba(147, 51, 234, 0.8);
-    /* Efeito neon */
-}
 
-header .button-contato button:hover {
 
-    background: linear-gradient(to right, rgb(109, 8, 218), rgb(175, 40, 242));
-    opacity: 1;
-    transition: 0.2s;
-}
 
 header .button-contato button {
     box-shadow: 0px 0px 20px rgba(147, 51, 234, 1);
     /* Brilho mais forte no hover */
     transform: scale(1.05);
     /* Efeito de leve crescimento */
+}
+
+/* ESTILO DO TOPO DO SITE */
+section.topo-do-site {
+    padding: 40px 4%
+}
+
+section.topo-do-site .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo-do-site h1 {
+    color: #FFFF;
+    font-size: 42px;
+    line-height: 40px;
+}
+
+.topo-do-site .texto-topo-site h1 span {
+    color: #691aca;
+
+}
+
+.topo-do-site .texto-topo-site p {
+    color: #FFFF;
+    margin: 40px 0;
+}
+
+.topo-do-site .img-topo-site {
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+    /*
+         ease-in-out: Suavisa a animação) 
+        alternate: alterna entre as posições de 0 a 100, para não ir bruscamente de cima para baixo, de 0 a 100) 
+    */
+}
+
+/* Animação do CSS (@Keyframes) o valor "flutuar" é um texto subjetivo que remete a animação */
+@keyframes flutuar {
+    0% {
+        top: 0;
+    }
+
+    100% {
+        top: 30px;
+    }
 }
