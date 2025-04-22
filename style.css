@@ -61,6 +61,15 @@ foi retirada, para que virasse uma classe global, aderindo o estilo aos outros b
     transform: scale(1.05);
 }
 
+h2.titulo {
+    color: white;
+}
+
+p.sub-titulo {
+    color: white;
+
+}
+
 /* ESTILO DO CABEÇALHO */
 
 .header {
@@ -128,6 +137,8 @@ section.topo-do-site .flex {
 
 .topo-do-site .texto-topo-site h1 span {
     color: #691aca;
+
+
 
 }
 
