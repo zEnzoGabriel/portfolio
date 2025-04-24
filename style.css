@@ -63,12 +63,23 @@ foi retirada, para que virasse uma classe global, aderindo o estilo aos outros b
 
 h2.titulo {
     color: white;
+    font-size: 38px;
+    text-align: center;
 }
 
-p.sub-titulo {
-    color: white;
-
+h2.titulo span {
+    color: #691aca;
 }
+
+button:hover {
+    box-shadow: 0px 0px 20px rgba(147, 51, 234, 1);
+    /* Brilho mais forte no hover */
+    transform: scale(1.05);
+    /* Efeito de leve crescimento */
+}
+
+
+
 
 /* ESTILO DO CABEÇALHO */
 
@@ -107,16 +118,6 @@ header nav ul li {
     padding: 0 40px;
 }
 
-
-
-
-
-header .button-contato button {
-    box-shadow: 0px 0px 20px rgba(147, 51, 234, 1);
-    /* Brilho mais forte no hover */
-    transform: scale(1.05);
-    /* Efeito de leve crescimento */
-}
 
 /* ESTILO DO TOPO DO SITE */
 section.topo-do-site {
@@ -165,4 +166,88 @@ section.topo-do-site .flex {
     100% {
         top: 30px;
     }
+}
+
+/* ESTILO DAS ESPECIALIDADES*/
+
+section.especialidades {
+    padding: 40px 4%;
+}
+
+section.especialidades .flex {
+    gap: 60px;
+    margin-top: 45px;
+}
+
+.especialidades .especialidades-box {
+    color: #FFFF;
+    padding: 40px;
+    /* border: 2px solid #FFFF; */
+    /* (A borda só é colocada para visualizar as divs e manipular seu tamanho) border-radius: 20px; */
+    border-radius: 20px;
+    transition: .2s;
+
+}
+
+.especialidades .especialidades-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #ffffff78;
+}
+
+.especialidades .especialidades-box i {
+    font-size: 70px;
+    color: #691aca;
+
+}
+
+.especialidades .especialidades-box h3 {
+    font-size: 28px;
+    margin: 30px 0;
+}
+
+/* ESTILO DO SOBRE */
+section.sobre {
+    padding: 80px 4%;
+    display: flex;
+
+}
+
+section.sobre .flex {
+    align-items: center;
+    gap: 60px;
+}
+
+.sobre .txt-sobre {
+    color: #FFFF;
+
+}
+
+h2.titulo-sobre {
+    color: #FFFF;
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+
+}
+
+h2.titulo-sobre span {
+    color: #691aca;
+    display: block;
+}
+
+.sobre .txt-sobre p {
+    margin: 20px 0;
+    text-align: justify;
+}
+
+.sobre .btn-social button {
+    width: 60px;
+    height: 60px;
+    margin: 0 5px;
+    border-radius: 50%;
+    border: none;
+    background-color: #691aca;
+    font-size: 22px;
+    cursor: pointer;
+    transition: .2s;
 }
