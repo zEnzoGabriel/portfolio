@@ -71,7 +71,8 @@ h2.titulo span {
     color: #691aca;
 }
 
-button:hover {
+button:hover,
+form .btn-enviar input:hover {
     box-shadow: 0px 0px 20px rgba(147, 51, 234, 1);
     /* Brilho mais forte no hover */
     transform: scale(1.05);
@@ -302,4 +303,53 @@ section.portfolio .flex {
 
 .overlay:hover {
     opacity: 1;
+}
+
+/* ESTILO DO FORMULÁRIO*/
+
+section.form {
+    padding: 80px 4%;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    background-color: #5c5c5c43;
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: #FFFF;
+    font-size: 18px;
+
+}
+
+form textarea {
+    resize: none;
+    max-width: 600px;
+}
+
+form .btn-enviar {
+    margin-top: 20px;
+    text-align: center;
+
+}
+
+form .btn-enviar input {
+    width: 120px;
+    background-color: #691aca;
+    color: black;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .2s;
 }
