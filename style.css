@@ -55,7 +55,7 @@ foi retirada, para que virasse uma classe global, aderindo o estilo aos outros b
 
 .button-contato button:hover {
 
-    background: linear-gradient(to right, rgb(109, 8, 218), rgb(175, 40, 242));
+    background: linea r-gradient(to right, rgb(109, 8, 218), rgb(175, 40, 242));
     opacity: 1;
     /* transition: 0.2s; */
     transform: scale(1.05);
